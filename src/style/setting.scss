@@ -1,0 +1,12 @@
+@import './comp/Footer.scss';
+
+html, .App {
+  height: 100%;
+}
+
+.App {
+}
+
+.content {
+  min-height: calc(100vh - 70px);
+}

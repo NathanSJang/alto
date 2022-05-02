@@ -1,4 +1,5 @@
 import './App.css';
+import './style/setting.scss'
 import Footer from './components/footer/Footer';
 import data from './assets/data/mission.json';
 
@@ -10,7 +11,9 @@ function App() {
 
   return (
     <div className="App">
-      APP
+      <div className='content'>
+        APP
+      </div>
       <Footer />
     </div>
   );
