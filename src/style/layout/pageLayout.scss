@@ -1,4 +1,22 @@
 .layout {
-  min-height: calc(100vh - 70px);
-  padding: 30px
+  min-height: calc(70vh);
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.layout-btn:disabled {
+  border: 1px solid;
+  background-color: rgb(157, 157, 157, 0.0);
+  width: 90%;
+  height: 4vh;
+}
+.layout-btn-container{
+  display: flex;
+  justify-content: center;
+}
+
+.layout-btn {
+  text-transform: uppercase;
 }

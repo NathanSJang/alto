@@ -6,9 +6,11 @@ export default function PageLayout(props) {
   return (
     <div className='layout'>
       {children}
-      <button disabled={disabled}>
-        {btnText}
-      </button>
+      <div className='layout-btn-container'>
+        <button className='layout-btn' disabled={disabled}>
+          {btnText}
+        </button>
+      </div>
     </div>
   )
 }
