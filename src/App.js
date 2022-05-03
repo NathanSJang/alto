@@ -7,16 +7,16 @@ import Logo from './components/layouts/logo/Logo.js';
 import data from './assets/data/mission.json';
 
 function App() {
-
+  const { trip, driver, vehicle, vibe} = data;
   return (
     <div className="App">
       <div className='content'>
         <Logo />
         <div>
-          <Trip />
+          <Trip data={trip}/>
         </div>
       </div>
-      <Footer />
+      <Footer data={trip}/>
     </div>
   );
 }
