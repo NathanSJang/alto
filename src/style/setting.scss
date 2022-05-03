@@ -1,10 +1,12 @@
 @import './comp/Footer.scss';
+@import './layout/logo.scss';
 
 html, .App {
   height: 100%;
 }
 
 .App {
+  background-color: rgb(247, 243, 239);
 }
 
 .content {

@@ -1,18 +1,20 @@
 import './App.css';
-import './style/setting.scss'
+import './style/setting.scss';
+
 import Footer from './components/footer/Footer';
+import Trip from './components/pages/trip/Trip';
+import Logo from './components/layouts/logo/Logo.js';
 import data from './assets/data/mission.json';
 
 function App() {
-  const { trip } = data;
-  const ea = trip.estimated_arrival;
-  let date = new Date(ea)
-  console.log(date.toLocaleTimeString())
 
   return (
     <div className="App">
       <div className='content'>
-        APP
+        <Logo />
+        <div>
+          <Trip />
+        </div>
       </div>
       <Footer />
     </div>
