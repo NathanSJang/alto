@@ -14,13 +14,12 @@ function App() {
 
   return (
     <div className="App">
+      <Logo />
       <div className='content'>
-        <div>
-          <Trip data={trip} />
-          <Driver data={driver} />
-          <Vehicle data={vehicle} />
-          <Map data={trip} vibe={vibe} />
-        </div>
+        <Trip data={trip} />
+        <Driver data={driver} />
+        <Vehicle data={vehicle} />
+        <Map data={trip} vibe={vibe} />
       </div>
       <Footer data={trip} />
     </div>
