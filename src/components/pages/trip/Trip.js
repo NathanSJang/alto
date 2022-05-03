@@ -8,6 +8,14 @@ export default function Trip(props) {
   const dropoff = data.dropoff_location;
   const pickup = data.pickup_location;
   let eta = new Date(data.estimated_arrival).toLocaleTimeString();
+  console.log((Number("1234")/ 100).toFixed(2))
+  
+  const currencyFormat = (amount) => new Intl.NumberFormat("en-US", {
+    style: "currency",
+    currency: "USD",
+    maximumFractionDigits: 0,
+  }).format(amount);
+
 
   return (
     <PageLayout
@@ -26,8 +34,8 @@ export default function Trip(props) {
         {/* section 2 */}
         <div>
           <div>
-            esstimated Fare:
-            {data.estimated_fare_min} - {data.estimated_fare_max}
+            Esstimated Fare:
+            { currencyFormat(data.estimated_fare_min / 100) } - { currencyFormat(data.estimated_fare_max / 100) }
           </div>
           <div>
             Passengers:
