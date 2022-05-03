@@ -11,7 +11,6 @@ function App() {
   return (
     <div className="App">
       <div className='content'>
-        <Logo />
         <div>
           <Trip data={trip}/>
         </div>
