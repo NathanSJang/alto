@@ -1,12 +1,8 @@
 import React from 'react'
-import ProfileIcon from '../../assets/images/Profile_icon.png';
-import VibeIcon from '../../assets/images/Vibes_icon.png'
-import data from '../../assets/data/mission.json';
 
 export default function Footer(props) {
   const { data } = props;
 
-  // const { trip } = data;
   let eta = new Date(data.estimated_arrival).toLocaleTimeString();
   // console.log(trip.dropoff_location.name.split(' -'))
 
@@ -14,7 +10,7 @@ export default function Footer(props) {
     <div className='footer-container'>
       <img
         className='footer-img'
-        src={ProfileIcon}
+        src='../images/Profile_icon.png'
         alt='Profile'
       />
       <div className='footer-dics'>
@@ -27,7 +23,7 @@ export default function Footer(props) {
       </div>
       <img
         className='footer-img'
-        src={VibeIcon}
+        src='../images/Vibes_icon.png'
         alt='Profile'
       />
     </div>

@@ -1,6 +1,7 @@
 import React from 'react';
 import Adress from '../../layouts/adress/Adress';
 import PageLayout from '../../layouts/pageLayout/PageLayout';
+import Eta from '../../layouts/eta/Eta';
 // asset
 import Edit from '../../../assets/images/Edit_icon.png';
 import Info from '../../../assets/images/Info_icon.png';
@@ -9,7 +10,6 @@ export default function Trip(props) {
   const { data } = props;
   const dropoff = data.dropoff_location;
   const pickup = data.pickup_location;
-  let eta = new Date(data.estimated_arrival).toLocaleTimeString();
   
   const currencyFormat = (amount) => new Intl.NumberFormat("en-US", {
     style: "currency",
@@ -24,10 +24,10 @@ export default function Trip(props) {
       disabled
     >
       <div className='trip-container'>
-        <div>Your Trip</div>
+        <div className='trip-title'>Your Trip</div>
         {/* section 1 */}
-        <div>
-          <div>{eta}</div>
+        <div className='trip-eta-container'>
+          <Eta time={data.estimated_arrival}/>
           <div>
             Estimated arrival at {data.dropoff_location.name}
           </div>

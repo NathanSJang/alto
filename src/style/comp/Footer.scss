@@ -1,18 +1,21 @@
 .footer-container {
+  // flex-shrink: 0;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
-  height: 50px;
+  height: 100px;
   border-top: 1px solid;
   position: fixed;
   bottom: 0;
   width: 100%;
+  font-family: 'PxGrotesk';
+  background-color: rgb(247, 243, 239);
 }
 
-.footer-img {
-  width: 24px;
-  height: 24px;
-}
+// .footer-img {
+//   width: 24px;
+//   height: 24px;
+// }
 
 .footer-dics {
   text-align: center;

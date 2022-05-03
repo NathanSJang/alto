@@ -14,14 +14,18 @@ function App() {
 
   return (
     <div className="App">
-      <Logo />
+      <div>
+        <Logo />
+      </div>
       <div className='content'>
         <Trip data={trip} />
         <Driver data={driver} />
         <Vehicle data={vehicle} />
         <Map data={trip} vibe={vibe} />
       </div>
-      <Footer data={trip} />
+      {/* <div> */}
+        <Footer className="footer" data={trip} />
+      {/* </div> */}
     </div>
   );
 }
