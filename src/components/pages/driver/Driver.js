@@ -23,7 +23,6 @@ export default function Driver(props) {
           {data.name}
         </div>
         <div className='driver-bio'>
-          {/* <div className='divider'></div> */}
           <Divider />
           {data.bio}
         </div>
