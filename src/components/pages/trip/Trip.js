@@ -1,14 +1,15 @@
 import React from 'react';
 import Adress from '../../layouts/adress/Adress';
-import Edit from '../../../assets/images/Edit_icon.png';
 import PageLayout from '../../layouts/pageLayout/PageLayout';
+// asset
+import Edit from '../../../assets/images/Edit_icon.png';
+import Info from '../../../assets/images/Info_icon.png';
 
 export default function Trip(props) {
   const { data } = props;
   const dropoff = data.dropoff_location;
   const pickup = data.pickup_location;
   let eta = new Date(data.estimated_arrival).toLocaleTimeString();
-  console.log((Number("1234")/ 100).toFixed(2))
   
   const currencyFormat = (amount) => new Intl.NumberFormat("en-US", {
     style: "currency",
@@ -36,6 +37,7 @@ export default function Trip(props) {
           <div>
             Esstimated Fare:
             { currencyFormat(data.estimated_fare_min / 100) } - { currencyFormat(data.estimated_fare_max / 100) }
+            <img src={Info} alt='info' />
           </div>
           <div>
             Passengers:
