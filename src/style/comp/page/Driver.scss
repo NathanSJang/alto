@@ -1,0 +1,36 @@
+.driver-img-container {
+  width: 100%;
+  height: 350px;
+  font-size: 11px;
+}
+
+.driver-img {
+  height: 100%;
+  width: 100%;
+  object-fit: none;
+  object-position: 50% 20%;
+}
+
+.driver-disc-container {
+  padding: 30px;
+  font-family: 'PxGroteskLight';
+}
+
+.driver-title {
+  color: rgb(172, 130, 109);
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-size: 11px;
+  font-family: 'PxGrotesk';
+}
+
+.driver-name {
+  font-size: 72px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.driver-bio {
+  font-size: 14px;
+  margin-bottom: 30px;
+}

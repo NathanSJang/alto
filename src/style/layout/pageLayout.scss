@@ -1,9 +1,9 @@
 .layout {
   min-height: calc(70vh);
-  padding: 30px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  margin-bottom: 50px;
 }
 
 .layout-btn:disabled {
@@ -12,9 +12,11 @@
   width: 90%;
   height: 4vh;
 }
+
 .layout-btn-container{
   display: flex;
   justify-content: center;
+  margin-top: 30px;
 }
 
 .layout-btn {
