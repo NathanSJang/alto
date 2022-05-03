@@ -33,34 +33,38 @@ export default function Trip(props) {
           </div>
         </div>
         {/* section 2 */}
-        <div>
-          <div>
-            Esstimated Fare:
-            { currencyFormat(data.estimated_fare_min / 100) } - { currencyFormat(data.estimated_fare_max / 100) }
-            <img src={Info} alt='info' />
+        <div className='trip-disc-container'>
+          <div className='trip-disc'>
+              Esstimated Fare: <br />
+            <div className='trip-fare'>
+              { currencyFormat(data.estimated_fare_min / 100) } - { currencyFormat(data.estimated_fare_max / 100) }
+              <img src={Info} alt='info' />
+            </div>
           </div>
-          <div>
-            Passengers:
+          <div className='trip-disc'>
+            Passengers: <br />
             {data.passengers_min} - {data.passengers_max}
           </div>
-          <div>
-            Payment:
+          <div className='trip-disc'>
+            Payment: <br />
             {data.payment}
           </div>
         </div>
         {/* section 3 pick up */}
-        <div>
+        <div className='trip-pickup'>
           <Adress data={pickup} />
         </div>
         {/* section 4 drop off*/}
-        <div>
+        <div className='trip-dropoff'>
           <Adress data={dropoff} />
         </div>
         {/* section 5 note */}
-        <div>
-          {data.notes}
-          {/* need to add onClick */}
-          <img src={Edit} alt='edit' />
+        <div className='trip-note'>
+          <div>
+            {data.notes}
+            {/* need to add onClick */}
+            <img className='trip-edit-icon' src={Edit} alt='edit' />
+          </div>
         </div>
       </div>
     </PageLayout>

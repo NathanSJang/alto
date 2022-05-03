@@ -14,6 +14,14 @@
 body {
   margin: 0;
 }
+@media screen and (max-width: 1024px){
+  body{
+   margin-bottom: 0;
+  }
+  .footer {
+    position: relative;
+  }
+}
 
 .App {
   background-color: rgb(247, 243, 239);

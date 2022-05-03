@@ -7,7 +7,8 @@ export default function Eta(props) {
 
   return (
     <div>
-      <span className='eta'>{e[0]}</span> <span className="am-pm">{e[1]}</span>
+      <span className='eta'>{e[0]}</span>
+      <span className="am-pm">{e[1]}</span>
     </div>
   )
 }

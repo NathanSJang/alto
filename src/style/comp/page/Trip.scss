@@ -1,15 +1,50 @@
 .trip-container {
   font-family: 'LinoType';
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
+
 .trip-eta-container {
   margin-top: 50px;
+  margin-bottom: 30px;
+  line-height: 30px;
 }
+
 
 .trip-title{
   font-size: 48px;
-  // font-weight: 200;
 }
 
-.trip-eta {
-  font-size: 56px;
+.trip-disc-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
 }
+
+.trip-disc {
+  border-top: 1px solid;
+  padding-top: 10px;
+  flex: 1 0 30%;
+  margin-right: 20px;
+}
+
+.trip-pickup {
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+.trip-dropoff {
+  border-top: 1px solid;
+  padding-top: 30px;
+  font-family: 'LinoTypeDemiBold';
+  margin-bottom: 30px;
+}
+
+.trip-note {
+  width: 70%;
+}
+.trip-edit-icon {
+  padding-left: 10px
+}
+
