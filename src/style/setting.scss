@@ -1,4 +1,6 @@
 @import './typo.scss';
+@import './color.scss';
+
 @import './comp/Footer.scss';
 @import './comp//page/Trip.scss';
 @import './comp/page/Driver.scss';
@@ -32,7 +34,7 @@ body {
 }
 
 .App {
-  background-color: rgb(247, 243, 239);
+  background-color: $background;
 }
 
 .content {
@@ -41,6 +43,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  color: $text-dark;
 }
 
 // .footer {

@@ -7,11 +7,10 @@
 }
 
 .trip-eta-container {
-  margin-top: 50px;
+  margin-top: 36px;
   margin-bottom: 30px;
   line-height: 30px;
 }
-
 
 .trip-title{
   font-size: 36px;
@@ -22,31 +21,50 @@
   display: flex;
   justify-content: space-between;
   width: 100%;
+  color: $text;
 }
 
 .trip-disc {
-  border-top: 1px solid;
+  border-top: 1px solid $gray-light;
+  font-size: 14px;
   padding-top: 10px;
   flex: 1 0 30%;
   margin-right: 20px;
+  letter-spacing: 0.5px;
+}
+
+.trip-info {
+  font-family: 'PxGroteskBold';
+  display: flex;
+  align-items: center;
+  margin-top: 1px;
+}
+
+.trip-info-icon {
+  margin-left: 10px;
+}
+
+.trip-adress-container{
+  margin-top: 48px;
+  font-size: 14px;
+  font-family: 'PxGroteskLight';
 }
 
 .trip-pickup {
-  margin-top: 50px;
-  margin-bottom: 30px;
+  margin-bottom: 18px;
 }
 
 .trip-dropoff {
-  border-top: 1px solid;
-  padding-top: 30px;
-  font-family: 'LinoTypeDemiBold';
+  font-family: 'PxGrotesk';
+  font-size: 14px;
   margin-bottom: 30px;
 }
 
 .trip-note {
   width: 70%;
 }
+
 .trip-edit-icon {
-  padding-left: 20px
+  padding-left: 16px
 }
 

@@ -7,9 +7,9 @@
 }
 
 .layout-btn:disabled {
-  border: 1px solid rgb(217, 216, 203);
-  background-color: rgb(157, 157, 157, 0.0);
-  color: rgb(217, 216, 203);
+  border: 1px solid $gray-light;
+  background-color: $btn-disabled-bg;
+  color: $gray-light;
   width: 90%;
   height: 4vh;
 }
@@ -22,8 +22,8 @@
 
 .layout-btn {
   border: 1px solid;
-  background-color: rgb(172, 130, 109);
-  color: white;
+  background-color: $brown-light;
+  color: $white;
   letter-spacing: 2px;
   width: 80%;
   height: 4vh;

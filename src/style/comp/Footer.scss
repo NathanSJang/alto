@@ -3,9 +3,13 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  height: 100px;
+  height: 80px;
   border-top: 1px solid;
-  // position: fixed;
+  // // position: fixed;
+  // bottom: 0;
+  // width: 100%;
+  position: fixed;
+  padding: 10px 10px 0px 10px;
   bottom: 0;
   width: 100%;
   font-family: 'PxGrotesk';

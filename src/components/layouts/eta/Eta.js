@@ -11,7 +11,7 @@ export default function Eta(props) {
         <span className='eta'>{e[0]}</span>
         <span className="am-pm">{e[1]}</span>
       </div>
-      <div>
+      <div className='eta-loaction'>
       Estimated arrival at {loaction}
       </div>
     </>

@@ -2,6 +2,7 @@ import React from 'react';
 import Adress from '../../layouts/adress/Adress';
 import PageLayout from '../../layouts/pageLayout/PageLayout';
 import Eta from '../../layouts/eta/Eta';
+import Divider from '../../layouts/divider/Divider';
 // asset
 import Edit from '../../../assets/images/Edit_icon.png';
 import Info from '../../../assets/images/Info_icon.png';
@@ -36,34 +37,45 @@ export default function Trip(props) {
         <div className='trip-disc-container'>
           <div className='trip-disc'>
               Esstimated Fare: <br />
-            <div className='trip-fare'>
+            <div className='trip-info'>
               { currencyFormat(data.estimated_fare_min / 100) } - { currencyFormat(data.estimated_fare_max / 100) }
-              <img src={Info} alt='info' />
+              <img
+                className='trip-info-icon'
+                src={Info}
+                alt='info'
+              />
             </div>
           </div>
           <div className='trip-disc'>
             Passengers: <br />
-            {data.passengers_min} - {data.passengers_max}
+            <span className='trip-info'>
+              {data.passengers_min} - {data.passengers_max}
+            </span>
           </div>
           <div className='trip-disc'>
             Payment: <br />
-            {data.payment}
+            <span className='trip-info'>
+              {data.payment}
+            </span>
           </div>
         </div>
-        {/* section 3 pick up */}
-        <div className='trip-pickup'>
-          <Adress data={pickup} />
-        </div>
-        {/* section 4 drop off*/}
-        <div className='trip-dropoff'>
-          <Adress data={dropoff} />
-        </div>
-        {/* section 5 note */}
-        <div className='trip-note'>
-          <div>
-            {data.notes}
-            {/* need to add onClick */}
-            <img className='trip-edit-icon' src={Edit} alt='edit' />
+        <div className='trip-adress-container'>
+          {/* section 3 pick up */}
+          <div className='trip-pickup'>
+            <Adress data={pickup} />
+          </div>
+          <Divider width='25%' mb='16px'/>
+          {/* section 4 drop off*/}
+          <div className='trip-dropoff'>
+            <Adress data={dropoff} />
+          </div>
+          {/* section 5 note */}
+          <div className='trip-note'>
+            {/* <div> */}
+              {data.notes}
+              {/* need to add onClick */}
+              <img className='trip-edit-icon' src={Edit} alt='edit' />
+            {/* </div> */}
           </div>
         </div>
       </div>
