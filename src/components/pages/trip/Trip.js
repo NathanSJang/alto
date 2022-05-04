@@ -37,14 +37,14 @@ export default function Trip(props) {
         <div className='trip-disc-container'>
           <div className='trip-disc'>
               Esstimated Fare: <br />
-            <div className='trip-info'>
+            <span className='trip-info'>
               { currencyFormat(data.estimated_fare_min / 100) } - { currencyFormat(data.estimated_fare_max / 100) }
               <img
                 className='trip-info-icon'
                 src={Info}
                 alt='info'
               />
-            </div>
+            </span>
           </div>
           <div className='trip-disc'>
             Passengers: <br />

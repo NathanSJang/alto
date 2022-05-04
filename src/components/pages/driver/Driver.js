@@ -1,6 +1,7 @@
 import React from 'react';
 import PageLayout from '../../layouts/pageLayout/PageLayout';
 import Divider from '../../layouts/divider/Divider';
+import SectionTitle from '../../layouts/sectionTitle/SectionTitle';
 
 export default function Driver(props) {
   const { data } = props;
@@ -18,12 +19,12 @@ export default function Driver(props) {
         />
       </div>
       <div className='driver-disc-container'>
-        <div className='driver-title'>Your Driver</div>
+        <SectionTitle>Your Driver</SectionTitle>
         <div className='driver-name'>
           {data.name}
         </div>
+        <Divider width='45%' mb='14px' />
         <div className='driver-bio'>
-          <Divider />
           {data.bio}
         </div>
       </div>

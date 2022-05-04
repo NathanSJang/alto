@@ -1,6 +1,8 @@
 import React from 'react'
 import PageLayout from '../../layouts/pageLayout/PageLayout';
 import Divider from '../../layouts/divider/Divider';
+import SectionTitle from '../../layouts/sectionTitle/SectionTitle';
+import InfoBold from '../../layouts/infoBold/InfoBold';
 
 export default function Vehicle(props) {
   const { data } = props;
@@ -17,9 +19,9 @@ export default function Vehicle(props) {
       </div>
       {/* section 2 */}
       <div className='vehicle-disc-container'>
-        <div className='vehicle-title'>
-          Your Vehicle
-        </div>
+        <SectionTitle>
+        Your Vehicle
+        </SectionTitle>
         <div className='vehicle-license'>
           {data.license}
         </div>
@@ -27,11 +29,11 @@ export default function Vehicle(props) {
         <div className='vehicle-info-container'>
           <div className='vehicle-disc'>
             Make / Model <br />
-            {data.make}
+            <InfoBold>{data.make}</InfoBold>
           </div>
           <div className='vehicle-disc'>
             Color <br />
-            {data.color}
+            <InfoBold>{data.color}</InfoBold>
           </div>
 
         </div>

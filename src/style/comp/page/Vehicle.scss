@@ -33,10 +33,12 @@
   justify-content: space-between;
   font-size: 14px;
   width: 100%;
+  color: $text;
+  line-height: 24px;
 }
 
 .vehicle-disc {
-  border-top: 1px solid;
+  border-top: 1px solid $gray-light;
   padding-top: 10px;
   flex: 1 0 50%;
   margin-right: 20px;
