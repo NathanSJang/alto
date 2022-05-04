@@ -1,11 +1,11 @@
 import React from 'react'
 
 export default function PageLayout(props) {
-  const { children, btnText, disabled, isLast } = props;
+  const { children, btnText, disabled, isLast, navId } = props;
 
   return (
     <div className={isLast ? 'layout-last' : 'layout'}>
-      <div className='layout-container'>
+      <div id={`${navId}`} className='layout-container'>
         {children}
       </div>
       <div className='layout-btn-container'>

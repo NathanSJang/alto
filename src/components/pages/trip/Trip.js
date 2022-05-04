@@ -21,8 +21,9 @@ export default function Trip(props) {
     <PageLayout
       btnText="cancel trip"
       disabled
+      navId='trip'
     >
-      <div className='trip-item-1'>
+      <div  className='trip-item-1'>
         <div className='trip-title-eta-container'>
           <div className='trip-title'>Your Trip</div>
           <div className='trip-eta-container'>

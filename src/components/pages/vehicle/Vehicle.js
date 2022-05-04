@@ -11,6 +11,7 @@ export default function Vehicle(props) {
     <PageLayout
       disabled
       btnText='Identify Vehicle'
+      navId='vehicle'
     >
       <div className='vehicle-img-container'>
         <img

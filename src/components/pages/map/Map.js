@@ -12,6 +12,7 @@ export default function Map(props) {
     <PageLayout
       btnText="Change Vehicle Vibe"
       isLast
+      navId='map'
     >
       <div style={{ position: 'relative' }}>
         <div className='map-img-container'>

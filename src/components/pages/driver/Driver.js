@@ -10,6 +10,7 @@ export default function Driver(props) {
     <PageLayout
       disabled
       btnText='Contact Driver'
+      navId='driver'
     >
       <div className='driver-img-container'>
         <img
