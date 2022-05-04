@@ -1,17 +1,38 @@
 .layout {
-  min-height: calc(70vh);
+  min-height: 90vh;
+  @include for-sm-phone {
+    min-height: 110vh;
+  }
+  @include for-tablet{
+    min-height: 65vh;
+  }
+}
+
+.layout-last {
+  min-height: 105vh;
+  @include for-sm-phone {
+    min-height: 140vh;
+  }
+  @include for-tablet{
+    min-height: 110vh;
+  }
+}
+
+.layout-container {
   display: flex;
   flex-direction: column;
-  // justify-content: space-between;
-  margin-bottom: 50px;
+  @include for-tablet {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+  }
 }
 
 .layout-btn:disabled {
   border: 1px solid $gray-light;
   background-color: $btn-disabled-bg;
   color: $gray-light;
-  width: 90%;
-  height: 4vh;
 }
 
 .layout-btn-container{
@@ -25,7 +46,8 @@
   background-color: $brown-light;
   color: $white;
   letter-spacing: 2px;
-  width: 80%;
-  height: 4vh;
+  width: 90%;
+  height: 42px;
+  font-family: 'PxGrotesk';
   text-transform: uppercase;
 }

@@ -38,7 +38,6 @@ export default function Vehicle(props) {
 
         </div>
       </div>
-    
     </PageLayout>
   )
 }

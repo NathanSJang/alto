@@ -1,3 +1,21 @@
+@mixin for-sm-phone {
+  @media (max-width: 375px) {
+    @content;
+  };
+}
+
+@mixin for-tablet {
+  @media (min-width: 600px) {
+    @content;
+  }
+};
+
+@mixin for-desktop-up {
+  @media (min-width: 1200px) {
+    @content;
+  }
+};
+
 @import './typo.scss';
 @import './color.scss';
 
@@ -17,36 +35,30 @@
 
 
 
-@font-face {
-  font-family: 'LinoTypeBlack';
-  src: url('../assets/fonts/Linotype\ -\ OptimaLTStd-Black.otf') format('trueType');
-}
 
 body {
   margin: 0;
-}
-@media screen and (max-width: 1024px){
-  body{
-   margin-bottom: 0;
-  }
-  .footer {
-    position: relative;
-  }
-}
-
-.App {
   background-color: $background;
 }
+// @media screen and (max-width: 1024px){
+//   body{
+//    margin-bottom: 0;
+//   }
+//   .footer {
+//     position: relative;
+//   }
+// }
+
+// .App {
+//   background-color: $background;
+// }
 
 .content {
-  min-height: calc(100vh - 100px);
-  padding-top: 100px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  padding-top: 60px;
   color: $text-dark;
+  @include for-desktop-up {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
-
-// .footer {
-//   flex-shrink: 0;
-// }

@@ -3,9 +3,7 @@ import Adress from '../../layouts/adress/Adress';
 import PageLayout from '../../layouts/pageLayout/PageLayout';
 import Eta from '../../layouts/eta/Eta';
 import Divider from '../../layouts/divider/Divider';
-// asset
-import Edit from '../../../assets/images/Edit_icon.png';
-import Info from '../../../assets/images/Info_icon.png';
+import InfoBold from '../../layouts/infoBold/InfoBold';
 
 export default function Trip(props) {
   const { data } = props;
@@ -37,26 +35,29 @@ export default function Trip(props) {
         <div className='trip-disc-container'>
           <div className='trip-disc'>
               Esstimated Fare: <br />
-            <span className='trip-info'>
-              { currencyFormat(data.estimated_fare_min / 100) } - { currencyFormat(data.estimated_fare_max / 100) }
-              <img
-                className='trip-info-icon'
-                src={Info}
-                alt='info'
-              />
-            </span>
+              <InfoBold
+                style={{ display: 'flex', alignItems: 'flex-start' }}
+              >
+                { currencyFormat(data.estimated_fare_min / 100) } - { currencyFormat(data.estimated_fare_max / 100) }
+                <img
+                  className='trip-info-icon'
+                  src='../images/Info_icon.png'
+                  alt='info'
+                />
+              </InfoBold>
           </div>
           <div className='trip-disc'>
             Passengers: <br />
-            <span className='trip-info'>
+            <InfoBold>
               {data.passengers_min} - {data.passengers_max}
-            </span>
+            </InfoBold>
           </div>
           <div className='trip-disc'>
             Payment: <br />
-            <span className='trip-info'>
+            <InfoBold>
               {data.payment}
-            </span>
+
+            </InfoBold>
           </div>
         </div>
         <div className='trip-adress-container'>
@@ -74,7 +75,11 @@ export default function Trip(props) {
             {/* <div> */}
               {data.notes}
               {/* need to add onClick */}
-              <img className='trip-edit-icon' src={Edit} alt='edit' />
+              <img
+                className='trip-edit-icon'
+                src='../images/Edit_icon.png'
+                alt='edit'
+              />
             {/* </div> */}
           </div>
         </div>

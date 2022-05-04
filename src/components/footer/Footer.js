@@ -1,10 +1,10 @@
 import React from 'react'
+import Eta from '../layouts/eta/Eta';
 
 export default function Footer(props) {
   const { data } = props;
 
-  let eta = new Date(data.estimated_arrival).toLocaleTimeString();
-  // console.log(trip.dropoff_location.name.split(' -'))
+  let eta = new Date(data.estimated_arrival).toLocaleTimeString([], {hour: 'numeric', minute:'2-digit'});
 
   return (
     <div className='footer-container'>
@@ -18,7 +18,8 @@ export default function Footer(props) {
           {data.dropoff_location.name}
         </div>
         <div>
-          {eta}
+          {/* <Eta time={data.estimated_arrival}/> */}
+          ETA: {eta}
         </div>
       </div>
       <img
