@@ -18,14 +18,14 @@ function App() {
         <Logo />
       </div>
       <div className='content'>
-        <Trip data={trip} />
-        <Driver data={driver} />
-        <Vehicle data={vehicle} />
-        <Map data={trip} vibe={vibe} />
+        <div className='page'>
+          <Trip data={trip} />
+          <Driver data={driver} />
+          <Vehicle data={vehicle} />
+          <Map data={trip} vibe={vibe} />
+        </div>
       </div>
-      {/* <div> */}
-        <Footer className="footer" data={trip} />
-      {/* </div> */}
+      <Footer className="footer" data={trip} />
     </div>
   );
 }

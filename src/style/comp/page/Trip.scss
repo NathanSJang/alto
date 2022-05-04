@@ -1,9 +1,24 @@
-.trip-container {
+.trip-item-1 {
+  width: 100%;
   font-family: 'LinoType';
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  padding: 30px;
+  @include for-tablet {
+    width: 40%;
+  }
+}
+
+.trip-item-2 {
+  width: 100%;
+  font-family: 'LinoType';
+  @include for-tablet {
+    width: 45%;
+  }
+}
+
+.trip-title-eta-container {
+  padding: 0 30px 0 30px;
+  @include for-tablet {
+    padding: 0;
+  }
 }
 
 .trip-eta-container {
@@ -15,13 +30,17 @@
 .trip-title{
   font-size: 36px;
   margin-bottom: 50px;
+  font-family: 'LinoType';
 }
 
 .trip-disc-container {
   display: flex;
   justify-content: space-between;
-  width: 100%;
   color: $text;
+  padding: 0 30px 0px 30px;
+  @include for-tablet {
+    padding: 0;
+  }
 }
 
 .trip-disc {
@@ -48,6 +67,11 @@
   margin-top: 48px;
   font-size: 14px;
   font-family: 'PxGroteskLight';
+  padding: 0 30px 30px 30px;
+
+  @include for-tablet {
+    padding-left: 50px;
+  }
 }
 
 .trip-pickup {
@@ -62,6 +86,9 @@
 
 .trip-note {
   width: 70%;
+  @include for-tablet {
+    width: 90%;
+  }
 }
 
 .trip-edit-icon {

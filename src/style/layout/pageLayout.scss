@@ -1,20 +1,26 @@
 .layout {
   min-height: 90vh;
+  width: 100%;
   @include for-sm-phone {
     min-height: 110vh;
   }
   @include for-tablet{
-    min-height: 65vh;
+    min-height: 40vh;
+  }
+  @include for-desktop-up {
+    min-height: 50vh;
+    padding-top: 100px;
   }
 }
 
 .layout-last {
-  min-height: 105vh;
+  min-height: 110vh;
+  width: 100%;
   @include for-sm-phone {
     min-height: 140vh;
   }
   @include for-tablet{
-    min-height: 110vh;
+    min-height: 60vh;
   }
 }
 
@@ -50,4 +56,7 @@
   height: 42px;
   font-family: 'PxGrotesk';
   text-transform: uppercase;
+  @include for-tablet {
+    width: 50%;
+  }
 }

@@ -22,16 +22,16 @@ export default function Trip(props) {
       btnText="cancel trip"
       disabled
     >
-      <div className='trip-container'>
-        <div className='trip-title'>Your Trip</div>
-        {/* section 1 */}
-        <div className='trip-eta-container'>
-          <Eta
-            time={data.estimated_arrival}
-            loaction={data.dropoff_location.name}
-          />
+      <div className='trip-item-1'>
+        <div className='trip-title-eta-container'>
+          <div className='trip-title'>Your Trip</div>
+          <div className='trip-eta-container'>
+            <Eta
+              time={data.estimated_arrival}
+              loaction={data.dropoff_location.name}
+            />
+          </div>
         </div>
-        {/* section 2 */}
         <div className='trip-disc-container'>
           <div className='trip-disc'>
               Esstimated Fare: <br />
@@ -60,27 +60,24 @@ export default function Trip(props) {
             </InfoBold>
           </div>
         </div>
+      </div>
+      <div className='trip-item-2'>
         <div className='trip-adress-container'>
-          {/* section 3 pick up */}
           <div className='trip-pickup'>
             <Adress data={pickup} />
           </div>
           <Divider width='25%' mb='16px'/>
-          {/* section 4 drop off*/}
           <div className='trip-dropoff'>
             <Adress data={dropoff} />
           </div>
-          {/* section 5 note */}
           <div className='trip-note'>
-            {/* <div> */}
-              {data.notes}
-              {/* need to add onClick */}
-              <img
-                className='trip-edit-icon'
-                src='../images/Edit_icon.png'
-                alt='edit'
-              />
-            {/* </div> */}
+            {data.notes}
+            {/* need to add onClick */}
+            <img
+              className='trip-edit-icon'
+              src='../images/Edit_icon.png'
+              alt='edit'
+            />
           </div>
         </div>
       </div>
