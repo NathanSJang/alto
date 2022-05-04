@@ -1,0 +1,35 @@
+.map-img-container{
+  width: 100%;
+  height: 500px;
+  mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1.0) 30%, transparent 100%);
+}
+.map-img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: 50% 20%;
+}
+
+.map-icon-container {
+  position: absolute;
+  right: 20px;
+  margin-top: -50px;
+  z-index: auto;
+}
+
+.map-eta-container {
+  margin-bottom: 30px;
+  line-height: 30px;
+}
+
+.map-disc-container {
+  padding: 30px;
+  font-family: 'PxGroteskLight';
+  font-size: 14px;
+  // display: flex;
+  // flex-direction: column;
+}
+
+.map-vibe {
+  border-top: 1px solid rgb(217, 216, 203);
+}

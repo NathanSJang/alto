@@ -27,10 +27,10 @@ export default function Trip(props) {
         <div className='trip-title'>Your Trip</div>
         {/* section 1 */}
         <div className='trip-eta-container'>
-          <Eta time={data.estimated_arrival}/>
-          <div>
-            Estimated arrival at {data.dropoff_location.name}
-          </div>
+          <Eta
+            time={data.estimated_arrival}
+            loaction={data.dropoff_location.name}
+          />
         </div>
         {/* section 2 */}
         <div className='trip-disc-container'>
