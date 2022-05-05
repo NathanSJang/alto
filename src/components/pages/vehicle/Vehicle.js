@@ -1,6 +1,5 @@
 import React from 'react'
 import PageLayout from '../../layouts/pageLayout/PageLayout';
-import Divider from '../../layouts/divider/Divider';
 import SectionTitle from '../../layouts/sectionTitle/SectionTitle';
 import InfoBold from '../../layouts/infoBold/InfoBold';
 
@@ -18,7 +17,6 @@ export default function Vehicle(props) {
           className='vehicle-img'
           src={data.image} alt='vehicle-photo' />
       </div>
-      {/* section 2 */}
       <div className='vehicle-disc-container'>
         <SectionTitle>
         Your Vehicle
@@ -26,7 +24,6 @@ export default function Vehicle(props) {
         <div className='vehicle-license'>
           {data.license}
         </div>
-        {/* section 3 */}
         <div className='vehicle-info-container'>
           <div className='vehicle-disc'>
             Make / Model <br />
@@ -36,7 +33,6 @@ export default function Vehicle(props) {
             Color <br />
             <InfoBold>{data.color}</InfoBold>
           </div>
-
         </div>
       </div>
     </PageLayout>

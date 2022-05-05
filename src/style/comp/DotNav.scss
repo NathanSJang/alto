@@ -1,0 +1,29 @@
+.dot-nav-container {
+  position: fixed;
+  top: 30px;
+  right: 20px;
+  z-index: 5;
+  @include for-tablet {
+    display: none;
+  }
+}
+
+.dot-nav {
+  list-style-type: disc;
+}
+
+.dot-nav-li {
+  margin-top: -8px
+}
+.dot-nav-li::marker {
+  font-size: 18px;
+
+}
+
+a {
+  color: $gray;
+}
+
+.active {
+  color: black;
+}
