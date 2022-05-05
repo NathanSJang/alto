@@ -18,7 +18,7 @@ export default function Driver(props) {
         <img
           className='driver-img'
           src={data.image}
-          alt='driver-photo'
+          alt='driver'
         />
       </div>
       <div className='driver-disc-container'>

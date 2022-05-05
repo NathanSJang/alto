@@ -17,7 +17,8 @@ export default function Vehicle(props) {
       <div className='vehicle-img-container'>
         <img
           className='vehicle-img'
-          src={data.image} alt='vehicle-photo'
+          src={data.image}
+          alt='vehicle'
         />
       </div>
       <div className='vehicle-disc-container'>
