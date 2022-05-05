@@ -1,4 +1,6 @@
 import React from 'react';
+
+// Components
 import PageLayout from '../../layouts/pageLayout/PageLayout';
 import Divider from '../../layouts/divider/Divider';
 import SectionTitle from '../../layouts/sectionTitle/SectionTitle';

@@ -1,23 +1,30 @@
 .layout {
   min-height: 90vh;
   width: 100%;
+
   @include for-sm-phone {
     min-height: 110vh;
+  }
+  @include for-btw-420-600 {
+    min-height: 60vh;
   }
   @include for-tablet{
     min-height: 40vh;
   }
   @include for-desktop-up {
     min-height: 50vh;
-    padding-top: 100px;
   }
 }
 
 .layout-last {
   min-height: 110vh;
   width: 100%;
+
   @include for-sm-phone {
     min-height: 140vh;
+  }
+  @include for-btw-420-600 {
+    min-height: 90vh;
   }
   @include for-tablet{
     min-height: 60vh;
@@ -27,6 +34,7 @@
 .layout-container {
   display: flex;
   flex-direction: column;
+
   @include for-tablet {
     flex-direction: row;
     align-items: center;
@@ -56,6 +64,7 @@
   height: 42px;
   font-family: 'PxGrotesk';
   text-transform: uppercase;
+
   @include for-tablet {
     width: 50%;
   }

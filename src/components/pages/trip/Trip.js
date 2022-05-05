@@ -1,4 +1,6 @@
 import React from 'react';
+
+// Components
 import Adress from '../../layouts/adress/Adress';
 import PageLayout from '../../layouts/pageLayout/PageLayout';
 import Eta from '../../layouts/eta/Eta';
@@ -15,7 +17,6 @@ export default function Trip(props) {
     currency: "USD",
     maximumFractionDigits: 0,
   }).format(amount);
-
 
   return (
     <PageLayout
@@ -57,7 +58,6 @@ export default function Trip(props) {
             Payment: <br />
             <InfoBold>
               {data.payment}
-
             </InfoBold>
           </div>
         </div>
@@ -73,7 +73,6 @@ export default function Trip(props) {
           </div>
           <div className='trip-note'>
             {data.notes}
-            {/* need to add onClick */}
             <img
               className='trip-edit-icon'
               src='../images/Edit_icon.png'

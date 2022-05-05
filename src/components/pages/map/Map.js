@@ -1,4 +1,6 @@
 import React from 'react';
+
+// Components
 import PageLayout from '../../layouts/pageLayout/PageLayout';
 import SectionTitle from '../../layouts/sectionTitle/SectionTitle';
 import Eta from '../../layouts/eta/Eta';
@@ -23,7 +25,10 @@ export default function Map(props) {
           />
         </div>
         <div className='map-icon-container'>
-          <img src='../images/Map_icon.png' />
+          <img
+            src='../images/Map_icon.png'
+            alt='map'
+          />
         </div>
       </div>
       <div className='map-disc-container'>

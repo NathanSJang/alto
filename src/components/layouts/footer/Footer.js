@@ -1,5 +1,4 @@
 import React from 'react'
-import Eta from '../layouts/eta/Eta';
 
 export default function Footer(props) {
   const { data } = props;
@@ -18,7 +17,6 @@ export default function Footer(props) {
           {data.dropoff_location.name}
         </div>
         <div>
-          {/* <Eta time={data.estimated_arrival}/> */}
           ETA: {eta}
         </div>
       </div>

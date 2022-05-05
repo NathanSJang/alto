@@ -8,7 +8,7 @@ export default function DotNav() {
     <ul className='dot-nav'>
       {pages.map((el, idx )=> (
         <Link
-          activeClass="active"
+          activeClass='active'
           key={idx}
           to={`${el}`}
           spy={true}
@@ -16,8 +16,7 @@ export default function DotNav() {
           offset={-50}
           duration={500}
         >
-          <li className='dot-nav-li'>
-          </li>
+          <li className='dot-nav-li'></li>
         </Link>
         ))}
     </ul>

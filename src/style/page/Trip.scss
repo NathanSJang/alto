@@ -1,6 +1,7 @@
 .trip-item-1 {
   width: 100%;
   font-family: 'LinoType';
+
   @include for-tablet {
     width: 40%;
   }
@@ -9,6 +10,7 @@
 .trip-item-2 {
   width: 100%;
   font-family: 'LinoType';
+
   @include for-tablet {
     width: 45%;
   }
@@ -16,6 +18,7 @@
 
 .trip-title-eta-container {
   padding: 0 30px 0 30px;
+
   @include for-tablet {
     padding: 0;
   }
@@ -38,6 +41,7 @@
   justify-content: space-between;
   color: $text;
   padding: 0 30px 0px 30px;
+
   @include for-tablet {
     padding: 0;
   }
@@ -86,6 +90,7 @@
 
 .trip-note {
   width: 70%;
+  
   @include for-tablet {
     width: 90%;
   }

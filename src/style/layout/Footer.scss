@@ -6,16 +6,14 @@
   height: 80px;
   border-top: 1px solid $gray-light;
   position: fixed;
-  // padding: 10px 10px 0px 10px;
   bottom: 0;
   width: 100%;
   font-family: 'PxGrotesk';
   background-color: rgb(247, 243, 239);
-}
-
-.footer-img {
-  width: 24px;
-  height: 24px;
+  
+  @include for-sm-phone {
+    gap: 6%;
+  }
 }
 
 .footer-dics {

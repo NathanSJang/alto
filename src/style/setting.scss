@@ -1,10 +1,12 @@
+// Screen
 @mixin for-sm-phone {
   @media (max-width: 375px) {
     @content;
   };
 }
-@mixin for-phone {
-  @media (max-width: 599px) {
+
+@mixin for-btw-420-600 {
+  @media (min-width: 420px) and (max-width: 600px) {
     @content;
   }
 }
@@ -21,24 +23,25 @@
   }
 };
 
+// core
 @import './typo.scss';
 @import './color.scss';
 
-@import './comp/Footer.scss';
-@import './comp//page/Trip.scss';
-@import './comp/page/Driver.scss';
-@import './comp/page/Vehicle.scss';
-@import './comp/page/Map.scss';
+// page
+@import './page/Trip.scss';
+@import './page/Driver.scss';
+@import './page/Vehicle.scss';
+@import './page/Map.scss';
 
-
+// layouts
+@import './layout/Footer.scss';
+@import './layout/Eta.scss';
+@import './layout/InfoBold.scss';
+@import './layout/DotNav.scss';
+@import './layout/Divider.scss';
 @import './layout/logo.scss';
 @import './layout/pageLayout.scss';
-@import './comp/Eta.scss';
-@import './comp/Divider.scss';
 @import './layout/SectionTitle.scss';
-@import './comp/InfoBold.scss';
-@import './comp//DotNav.scss';
-
 
 body {
   margin: 0;
@@ -60,5 +63,6 @@ body {
   width: 100%;
   @include for-desktop-up {
     width: 50%;
+    padding-top: 200px;
   }
 }

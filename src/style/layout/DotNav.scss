@@ -3,7 +3,11 @@
   top: 30px;
   right: 20px;
   z-index: 5;
+
   @include for-tablet {
+    display: none;
+  }
+  @include for-btw-420-600 {
     display: none;
   }
 }
@@ -15,6 +19,7 @@
 .dot-nav-li {
   margin-top: -8px
 }
+
 .dot-nav-li::marker {
   font-size: 18px;
 

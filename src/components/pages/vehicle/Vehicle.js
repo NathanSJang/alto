@@ -1,4 +1,6 @@
-import React from 'react'
+import React from 'react';
+
+// Components
 import PageLayout from '../../layouts/pageLayout/PageLayout';
 import SectionTitle from '../../layouts/sectionTitle/SectionTitle';
 import InfoBold from '../../layouts/infoBold/InfoBold';
@@ -15,7 +17,8 @@ export default function Vehicle(props) {
       <div className='vehicle-img-container'>
         <img
           className='vehicle-img'
-          src={data.image} alt='vehicle-photo' />
+          src={data.image} alt='vehicle-photo'
+        />
       </div>
       <div className='vehicle-disc-container'>
         <SectionTitle>

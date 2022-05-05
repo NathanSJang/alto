@@ -5,7 +5,10 @@ export default function PageLayout(props) {
 
   return (
     <div className={isLast ? 'layout-last' : 'layout'}>
-      <div id={`${navId}`} className='layout-container'>
+      <div
+        id={`${navId}`}
+        className='layout-container'
+      >
         {children}
       </div>
       <div className='layout-btn-container'>
